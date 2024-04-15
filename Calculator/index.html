@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Calculator Project</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <label for="ist_text">Enter 1st Value</label>
+          <input
+            type="text"
+            id="firstNum"
+            class="form-control"
+            placeholder="Type First Number"
+            onkeyup="validate(this);"
+          />
+          <div id="numloc"></div>
+        </div>
+        <div class="col-md-4">
+          <label for=""></label>
+          <select
+            id="optionseclect"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Select Oparator</option>
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="2nd_text">Enter 2nd Value</label>
+          <input
+            type="text"
+            id="lastnum"
+            class="form-control"
+            placeholder="Type Second Number"
+            onkeyup="validate2(this);"
+          />
+          <div id="numlok"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center mt-5">
+            <button type="button" class="btn btn-primary" onclick="result() ;">
+              Calculate
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center mt-5">
+            <input
+              type="text"
+              id="sumtxt"
+              class="form-control"
+              placeholder="Total Result"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

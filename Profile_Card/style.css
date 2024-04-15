@@ -1,0 +1,51 @@
+body {
+  background-color: blueviolet;
+}
+.main_div {
+  width: 400px;
+  height: 450px;
+  padding: 25px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  margin: auto;
+  background-color: aliceblue;
+}
+#profile_pic {
+  width: 200px;
+  height: 200px;
+  background-image: url(images/rajib_photo.jpg);
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#name_occupation {
+  text-align: center;
+}
+
+#name_occupation h3 {
+  font-size: 30px;
+}
+
+#name_occupation h3 span {
+  display: block;
+  font-size: 20px;
+}
+#short_description {
+  text-align: center;
+  font-size: 20px;
+}
+
+p#contact_info {
+  text-align: center;
+  font-weight: bold;
+}
+p#contact_info span {
+  display: block;
+}
